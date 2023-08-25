@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task #1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c7392f690f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><span>T</span>ASK</h1>
+                <ul id="ul_list">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#content_one">Content #1</a></li>
+                    <li><a href="#content_two">Content #2</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeNavMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openNavMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Css</p>
+                <h1>Hi, CSS <span>Developer</span><br>Lorem Ipsum</h1>
+            </div>
+        </div>
+    </div>
+    <main>
+        <!-- Content #1 -->
+        <div id="content_one">
+            <div class="container">
+                <h1 class="sub-title">Content #1</h1>
+                <div class="content-lists">
+                    <div>
+                        <i class="fas fa-code"></i>
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ex assumenda velit dolores,
+                            quasi incidunt, dolor sunt laudantium corporis totam fugiat et placeat mollitia quisquam at
+                            autem, quod iusto minima!</p>
+                        <a href="javascript:void(0);">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fas fa-crop-alt"></i>
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ex assumenda velit dolores,
+                            quasi incidunt, dolor sunt laudantium corporis totam fugiat et placeat mollitia quisquam at
+                            autem, quod iusto minima!</p>
+                        <a href="javascript:void(0);">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa fa-store"></i>
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ex assumenda velit dolores,
+                            quasi incidunt, dolor sunt laudantium corporis totam fugiat et placeat mollitia quisquam at
+                            autem, quod iusto minima!</p>
+                        <a href="javascript:void(0);">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content #2 -->
+        <div id="content_two">
+            <div class="container">
+                <h1 class="sub-title">Content #2</h1>
+                <div class="work-lists">
+                    <div class="work">
+                        <img src="images/work-1.png" alt="">
+                        <div class="layer">
+                            <h3>Lorem Ipsum</h3>
+                            <p>is simply dummy text of the printing and typesetting industry.</p>
+                            <a href="javascript:void(0);"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png" alt="">
+                        <div class="layer">
+                            <h3>Lorem Ipsum</h3>
+                            <p>is simply dummy text of the printing and typesetting industry.</p>
+                            <a href="javascript:void(0);"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png" alt="">
+                        <div class="layer">
+                            <h3>Lorem Ipsum</h3>
+                            <p>is simply dummy text of the printing and typesetting industry.</p>
+                            <a href="javascript:void(0);"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" class="btn">See more</a>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row flex-footer">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>exmaple@mail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+1 111-222-4440</p>
+                    <div class="social">
+                        <a href="javascript:void(0);"><i class="fab fa-facebook"></i></a>
+                        <a href="javascript:void(0);"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="javascript:void(0);"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &COPY; By Khaled <i class="fas fa-heart"></i></p>
+        </div>
+    </footer>
+
+    <script>
+        var ul_list = document.getElementById("ul_list");
+        function openNavMenu() {
+            ul_list.style.right = "0";
+
+        }
+        function closeNavMenu() {
+            ul_list.style.right = "-200px";
+
+        }
+    </script>
+</body>
+
+</html>
